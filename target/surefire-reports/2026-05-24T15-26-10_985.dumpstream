@@ -1,0 +1,5 @@
+# Created at 2026-05-24T15:26:11.168
+Boot Manifest-JAR contains absolute paths in classpath 'G:\CRT\hospi\hospital-backend\hospital-backend\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+'other' has different root
+

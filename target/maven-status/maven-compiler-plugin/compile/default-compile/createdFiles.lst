@@ -1,0 +1,5 @@
+hospital_backend\controller\PatientController.class
+hospital_backend\entity\Patient.class
+hospital_backend\service\PatientService.class
+hospital_backend\HospitalBackendApplication.class
+hospital_backend\repository\PatientRepository.class
