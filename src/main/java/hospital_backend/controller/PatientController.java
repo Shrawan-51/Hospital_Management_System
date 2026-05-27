@@ -8,7 +8,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/patients")
-@CrossOrigin("*")
+@CrossOrigin(origins = "*", allowedHeaders = "*", methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.DELETE, RequestMethod.OPTIONS})
 public class PatientController {
 
     private final PatientService service;
@@ -25,5 +25,10 @@ public class PatientController {
     @GetMapping
     public List<Patient> getPatients() {
         return service.getAllPatients();
+    }
+
+    @DeleteMapping("/{id}")
+    public void deletePatient(@PathVariable int id) {
+        service.deletePatient(id);
     }
 }

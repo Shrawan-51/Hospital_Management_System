@@ -22,4 +22,8 @@ public class PatientService {
     public List<Patient> getAllPatients() {
         return repository.findAll();
     }
+
+    public void deletePatient(int id) {
+        repository.deleteById(id);
+    }
 }
